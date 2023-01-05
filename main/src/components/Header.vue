@@ -10,6 +10,9 @@
             </div>
         </div>
     </header>
+                <div class="backgroundImg">
+                    <img src="../backgroundImage.jpg" alt="">
+                </div>
 </body>
 </html>
 </template>
@@ -23,37 +26,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+    transform: scale(1.1)
 }
 
 .header {
-    width: 100%;
-    height: 60px;
-    display: block;
+    display: flex;
+    justify-content: center;
     background-color: rgb(56, 56, 240);
 }
 
-.inner_header{
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    background-color: rgb(4, 15, 15);
-}
-
 .logo_container{
-    height: 100%;
-    display: table;
-    float: left;
+    font-size: 14px;
 }
 
 .logo_container h1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    
+    color: white;   
 }
+
+.backgroundImg {
+    background-size: 150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  color: pink;
+}
+
 </style>
