@@ -1,38 +1,99 @@
-.App {
+
+
+body {
+
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.backgroundImg{
+  background-color:black;
+  }
+
+.custom-font {
+  font-family: 'Moder Age Script', cursive;
+}
+
+
+
+.header {
+
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.button-line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.header-text {
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+
+
+
+.apresentation {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hello-h1,
+.name-h1 {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hello-h1::before,
+.name-h1::before {
+  content: "";
+  position: absolute;
+  opacity: 0; /* Hide the pseudo-element initially */
+  top: 0;
+  left: 0;
+  animation: letterDrop 1s ease-in-out forwards;
+}
+
+.hello-h1::before {
+  animation-delay: 0.5s; /* Delay the animation for the hello-h1 element */
+}
+
+.name-h1::before {
+  animation-delay: 1s; /* Delay the animation for the name-h1 element */
+}
+
+@keyframes letterDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Move the letter up */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move the letter to its original position */
   }
 }
