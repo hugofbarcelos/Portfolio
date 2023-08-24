@@ -1,12 +1,10 @@
 import './App.css';
 import Menu from './Menu/Menu';
+import About from './About/About';
+import Skills from './Skills/Skills';
 
 function App() {
-  window.addEventListener('scroll', function () {
-    let scrolled = window.scrollY;
-    let parallaxBg = document.querySelector('.parallax-bg');
-    parallaxBg.style.transform = 'translateY(' + scrolled * 0.5 + 'px)';
-  });
+
 
   return (
     <div class="backgroundImg">
@@ -19,7 +17,11 @@ function App() {
         </div>
       </div>
       <Menu/>
-    </div>
+      <div>
+        <div className="horizontal-line"></div>
+      </div>
+      <About/>
+   </div>
   );
 }
 

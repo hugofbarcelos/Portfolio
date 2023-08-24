@@ -1,0 +1,42 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sky Styling */
+.sky {
+    width: 100vw;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Tree Styling and positioning */
+.tree {
+    height: 100vh;
+
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* Track Styling and positioning */
+.track {
+
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 6s linear infinite;
+}
+
+
+/* Moving the track backwards */
+@keyframes trackanimation {
+    100% {
+        transform: translate(-500vw);
+    }
+}

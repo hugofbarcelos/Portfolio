@@ -1,45 +1,47 @@
 .apresentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .hello-h1,
-  .iAm-h1  {
-      color: white; 
-      font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    margin-right: 5px; /* Add spacing between letters */
-  }
+.hello-h1,
+.iAm-h1 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-right: 5px; /* Add spacing between letters */
+}
 
-  .name-h1{
-      color:white;
-      font-size: 3rem;
-  }
+.nameDiv{
+    margin-top:40px;
+}
 
+.name-h1 {
+  color: white;
+  font-size: 3rem;
+}
 
-  .helloDiv{
-      display: flex;
-  }
-  
-  .typing-effect {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    animation: typing 3s steps(20) infinite;
-  }
-  
-  @keyframes typing {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
+.helloDiv {
+  display: flex;
+}
 
-  .left-apresentation{
-    display: flex;
-    flex-direction: column;
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
   }
-  
+  100% {
+    width: 100%;
+  }
+}
+
+.left-apresentation {
+  display: flex;
+  flex-direction: column;
+}

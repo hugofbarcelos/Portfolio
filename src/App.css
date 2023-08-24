@@ -97,3 +97,9 @@ body {
     transform: translateY(0); /* Move the letter to its original position */
   }
 }
+
+.horizontal-line {
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 75px 16px rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+}
