@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../Projects/Projects.css';
+import '../Card/Card.css';
 
-const Card = ({ img, imageClass, text, containerClass }) => {
+const Card = ({ img, imageClass, text, containerClass, technologies }) => {
 
     const [tech, setTech] = useState(false);
 
@@ -18,7 +18,7 @@ const Card = ({ img, imageClass, text, containerClass }) => {
   return (
     <>
       {(!tech) ? 
-        <div class="card">
+        <div className="card">
           <div className={`container ${containerClass ?? ''}`}>
             <img src={img} alt="HugoPhoto" className={imageClass ?? ''} />
             <h4 className="custom-font">
@@ -30,12 +30,16 @@ const Card = ({ img, imageClass, text, containerClass }) => {
           </div>
         </div>
        : 
-        <div>
-            <h1>hello</h1>
+        <div className='card techCard'>
+            {technologies.map((tech) => {
+                return (
+                    <h1 className='custom-font technologies'>{tech}</h1>
+                )
+            })}
 
 
         <button className="custom-font techButton" onClick={handleChange}>
-              TECH
+              Company
             </button>
         </div>
       }
