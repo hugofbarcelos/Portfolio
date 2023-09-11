@@ -3,8 +3,9 @@ import Menu from '../src/modules/Menu/Menu';
 import About from '../src/modules/About/About';
 import Skills from '../src/modules/Skills/Skills';
 import Project from '../src/modules/Projects/Projects';
+import Contact from './modules/Contact/Contact';
 
-const sections = [<Menu />, <About />, <Project />, <Skills />];
+const sections = [<Menu />, <About />, <Project />, <Skills />, <Contact/>];
 /**
  *  TODO organizar app em folder 'components' e 'modules' . Cada module é constituido por varios components, e cada module é responsavel
  *  por conter uma secção da main page
