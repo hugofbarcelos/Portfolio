@@ -1,7 +1,7 @@
 import Ageas from './ageas.png';
-import '../Projects/Projects.css';
+import './Projects.css';
 import CGD from './caixa-geral-de-depositos.jpeg';
-import Card from '../components/Card/Card.js';
+import Card from '../../components/Card/Card.js';
 
 const Project = () => {
   return (

@@ -1,10 +1,10 @@
 import './App.css';
-import Menu from './Menu/Menu';
-import About from './About/About';
-//import Skills from './Skills/Skills';
-import Project from './Projects/Projects';
+import Menu from '../src/modules/Menu/Menu';
+import About from '../src/modules/About/About';
+import Skills from '../src/modules/Skills/Skills';
+import Project from '../src/modules/Projects/Projects';
 
-const sections = [<Menu />, <About />, <Project />];
+const sections = [<Menu />, <About />, <Project />, <Skills />];
 /**
  *  TODO organizar app em folder 'components' e 'modules' . Cada module é constituido por varios components, e cada module é responsavel
  *  por conter uma secção da main page
@@ -22,9 +22,9 @@ function App() {
           <div class="button-line"></div>
         </div>
       </div>
-      {sections.map((section) => {
+      {sections.map((section, i) => {
         return (
-          <div>
+          <div key={i}>
             {section}
             <div>
               <div className="horizontal-line"></div>

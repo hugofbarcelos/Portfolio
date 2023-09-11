@@ -2,22 +2,21 @@ import { useState } from 'react';
 import '../Card/Card.css';
 
 const Card = ({ img, imageClass, text, containerClass, technologies }) => {
+  const [tech, setTech] = useState(false);
 
-    const [tech, setTech] = useState(false);
+  console.log(tech);
 
-    console.log(tech)
-
-    const handleChange = () => {
-        if(tech){
-            setTech(false);
-        }else{
-            setTech(true);
-        }
+  const handleChange = () => {
+    if (tech) {
+      setTech(false);
+    } else {
+      setTech(true);
     }
+  };
 
   return (
     <>
-      {(!tech) ? 
+      {!tech ? (
         <div className="card">
           <div className={`container ${containerClass ?? ''}`}>
             <img src={img} alt="HugoPhoto" className={imageClass ?? ''} />
@@ -29,20 +28,20 @@ const Card = ({ img, imageClass, text, containerClass, technologies }) => {
             </button>
           </div>
         </div>
-       : 
-        <div className='card techCard'>
-            {technologies.map((tech) => {
-                return (
-                    <h1 className='custom-font technologies'>{tech}</h1>
-                )
-            })}
-
-
-        <button className="custom-font techButton" onClick={handleChange}>
-              Company
-            </button>
+      ) : (
+        <div className="card techCard">
+          {technologies.map((tech, i) => {
+            return (
+              <h1 key={i} className="custom-font technologies">
+                {tech}
+              </h1>
+            );
+          })}
+          <button className="custom-font techButton" onClick={handleChange}>
+            Company
+          </button>
         </div>
-      }
+      )}
     </>
     // TODO try out height: 320px to see if buttons align
     // TODO extract CSS que fizer sentido viver nesta pasta, e tirar da pasta Projects

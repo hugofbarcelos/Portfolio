@@ -1,0 +1,36 @@
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.skillsText{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.techContainer{
+    display: inline-grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    text-align: center;
+}
+
+.techName:hover {
+    transform: scale(1.05);
+}
+
+
+.techName {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 30px 10px 30px;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px -12px 44px 16px rgba(255,255,255,0.2)
+}
+
+.techBox {
+    display: flex;
+    justify-content: center;
+}
