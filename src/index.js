@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import '/Users/hugobarcelos/Desktop/Portfolio/src/fonts/KaushanScript-Regular.otf'
-import '/Users/hugobarcelos/Desktop/Portfolio/src/fonts/modern_age/Modern Age Italic.otf';
+import './fonts/KaushanScript-Regular.otf'
+import './fonts/modern_age/Modern Age Italic.otf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
