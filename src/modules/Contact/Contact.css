@@ -17,4 +17,33 @@
 .iconsContainer{
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+}
+
+.labelContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+input {
+    height: 1.5rem;
+    margin: 10px;
+}
+
+.commentsInput {
+    height: 5rem;
+    margin: 10px;
+}
+
+.submitButton {
+    border: none;
+    cursor: pointer;
+    padding: 13px 26px 30px 23px
+}
+
+.submitContainer {
+    display:flex;
+    justify-content: center;
 }

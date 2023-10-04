@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
-  const skills = ["JavaScript", "Vue.js", "SCSS", "React.js", "HTML", "Java", "Git", "TypeScript", "VSCode"];
+  const skills = ["JavaScript", "Vue.js", "SCSS", "React.js", "HTML", "Java", "Git", "TypeScript", "Umbraco"];
 
   return (
     <div >
