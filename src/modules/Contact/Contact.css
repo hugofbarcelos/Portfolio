@@ -40,7 +40,8 @@ input {
 .submitButton {
     border: none;
     cursor: pointer;
-    padding: 13px 26px 30px 23px
+    padding: 13px 26px 30px 23px;
+    border-radius: 3px;
 }
 
 .submitContainer {

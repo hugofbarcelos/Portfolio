@@ -13,11 +13,13 @@ const Project = () => {
         <Card 
           text="Back-end Developer" 
           img={CGD} 
-          technologies={["Java", "SQL Server", "Jira", "Git", "JPA", "Intellij"]} />
+          technologies={["Java", "SQL Server", "Jira", "Git", "JPA", "Intellij"]} 
+          />
         <Card
           text="Front-end Developer"
           img={Ageas}
           technologies={["JavaScript", "Vue.js", "SCSS", "HTML", "Umbraco", "Axios"]}
+          imageClass="ageasPhoto"
         />
       </div>
     </div>

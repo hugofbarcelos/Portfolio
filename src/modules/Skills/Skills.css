@@ -35,3 +35,16 @@
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+    .techContainer {
+        grid-template-columns: 1.2fr 1.2fr;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .techContainer {
+        grid-template-columns: 1.2fr;
+    }
+}
+  

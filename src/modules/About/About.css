@@ -61,3 +61,34 @@
         margin: 30px;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .textAndImg{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .photoDiv{
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .photo{
+        width: 21rem;
+    }
+}
+
+
+@media only screen and (max-width: 385px) {
+    .photo{
+        margin-right: 0;
+        width: 19rem;
+    }
+}
+
+
+
+

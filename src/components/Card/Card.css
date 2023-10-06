@@ -52,3 +52,10 @@
     font-size: 20px;
     margin: 7px;
 }
+
+
+@media only screen and (max-width: 385px) {
+  .ageasPhoto{
+      width:17rem
+  }
+}

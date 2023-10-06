@@ -34,3 +34,24 @@
     justify-content: space-around;
     margin: 50px 0 85px 0;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .cards{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card{
+    margin: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 385px) {
+  .card{
+    width: 17rem;
+  }
+}
+
+

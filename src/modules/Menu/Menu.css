@@ -32,6 +32,19 @@
   animation: typing 3s steps(20) infinite;
 }
 
+@media only screen and (max-width: 500px) {
+  .name-h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .name-h1 {
+    font-size: 1.7rem;
+  }
+}
+
+
 @keyframes typing {
   0% {
     width: 0;
