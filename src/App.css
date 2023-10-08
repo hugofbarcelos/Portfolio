@@ -113,6 +113,7 @@ body {
   overflow-x: hidden; 
   padding-top: 20px;
   transition: right 0.3s ease;
+  opacity: 0.8;
 }
 
 
