@@ -10,9 +10,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
 
-
     e.preventDefault();
-
 
     emailjs.sendForm('service_gmrizbh', 'template_is98d2n', form.current, 'I-gzM1BKGb-df5OY1')
       .then((result) => {
@@ -20,7 +18,15 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+
+      refreshPage();
+  };
+
+  const refreshPage = () => {
+    window.location.reload();
   }
+
+
   return (
     <div>
       <div className="contactContainer">
@@ -45,7 +51,7 @@ const Contact = () => {
             <textarea type="text" name="user_message" className='commentsInput' textarea/>
           </label>
           <div className='submitContainer'>
-            <input type="submit" value="Send" className='submitButton custom-font'/>
+            <input type="submit" value="Send" className='submitButton custom-font' />
           </div>
         </form>
       </div>
