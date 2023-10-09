@@ -1,58 +1,62 @@
-.contactContainer{
-    display: flex;
-    justify-content: center;
-    margin: 40px 0 40px 0;
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
 }
 
-.contactText{
-    color: white;
-    font-size: 1.5rem;
+.contactText {
+  color: white;
+  font-size: 1.5rem;
 }
 
-.icon{
-    background-color: white;
-    border-radius: 5px;
-    margin: 8px;
+.icon {
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px;
+  width: 35px;
 }
 
-.iconsContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.labelContainer{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin:10px;
+.labelContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 input {
-    height: 1.5rem;
-    margin: 10px;
+  height: 1.5rem;
+  margin: 10px;
 }
 
 .commentsInput {
-    height: 5rem;
-    margin: 10px;
+  height: 5rem;
+  margin: 10px;
 }
 
 .submitButton {
-    border: none;
-    cursor: pointer;
-    padding: 13px 26px 30px 23px;
-    border-radius: 3px;
-    background-color: white;
-    color: black;
+  border: none;
+  cursor: pointer;
+  padding: 13px 26px 30px 23px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
 }
 
 .submitContainer {
-    display:flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .followContainer {
-    color: white;
+  color: white;
+}
+
+.followmeText {
+  font-size: 1.2rem;
 }

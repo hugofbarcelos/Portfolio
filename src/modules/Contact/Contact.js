@@ -57,7 +57,7 @@ const Contact = () => {
       </div>
       <div className="iconsContainer custom-font">
         <div className='followContainer'>
-          <h1>Follow me</h1>
+          <h1 className='followmeText'>Follow me</h1>
         </div>
         <div >
           <a href="https://www.linkedin.com/in/hugo-barcelos/">
