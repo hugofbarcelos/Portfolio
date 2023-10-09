@@ -55,13 +55,18 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="iconsContainer">
-        <a href="https://www.linkedin.com/in/hugo-barcelos/">
-          <img src={LinkedinIcon} alt="LinkedinIcon" className="icon" />
-        </a>
-        <a href="https://github.com/hugofbarcelos">
-          <img src={GithubIcon} alt="GithubIcon" className="icon" />
-        </a>
+      <div className="iconsContainer custom-font">
+        <div className='followContainer'>
+          <h1>Follow me</h1>
+        </div>
+        <div >
+          <a href="https://www.linkedin.com/in/hugo-barcelos/">
+            <img src={LinkedinIcon} alt="LinkedinIcon" className="icon" />
+          </a>
+          <a href="https://github.com/hugofbarcelos">
+            <img src={GithubIcon} alt="GithubIcon" className="icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

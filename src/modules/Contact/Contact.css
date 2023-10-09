@@ -12,11 +12,12 @@
 .icon{
     background-color: white;
     border-radius: 5px;
+    margin: 8px;
 }
 
 .iconsContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -43,10 +44,15 @@ input {
     padding: 13px 26px 30px 23px;
     border-radius: 3px;
     background-color: white;
+    color: black;
 }
 
 .submitContainer {
     display:flex;
     justify-content: center;
 
+}
+
+.followContainer {
+    color: white;
 }
