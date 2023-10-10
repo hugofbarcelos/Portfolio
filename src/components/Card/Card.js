@@ -32,7 +32,7 @@ const Card = ({ img, imageClass, text, containerClass, technologies }) => {
         <div className="card techCard">
           {technologies.map((tech, i) => {
             return (
-              <h1 key={i} className="custom-font technologies">
+              <h1 key={i} className="custom-font-readable technologies">
                 {tech}
               </h1>
             );

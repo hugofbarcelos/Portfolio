@@ -20,6 +20,9 @@ body {
   font-family: 'Moder Age Script', cursive;
 }
 
+.custom-font-readable {
+  font-family: 'Ace Sans Extrabold Oblique', cursive;
+}
 
 
 .header {

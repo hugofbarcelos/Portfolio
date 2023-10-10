@@ -13,7 +13,7 @@ const About = () => {
 
       <div className="textAndImg">
         <div className="textDiv">
-          <h1 className="h1-text custom-font">
+          <h1 className="h1-text custom-font-readable">
             I’ve always loved to play computer games, and with that I started to
             gain interest in trying to understand how everything worked software
             wise. With these values in mind, I ventured into what was the

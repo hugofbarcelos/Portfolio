@@ -8,6 +8,11 @@
   src: url('./fonts/modern_age/Modern Age Italic.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Ace Sans Extrabold Oblique';
+  src: url('./fonts/Ace Sans Extrabold Oblique/Ace Sans Extrabold Oblique.otf') format('opentype');
+}
+
 
 body {
   margin: 0;

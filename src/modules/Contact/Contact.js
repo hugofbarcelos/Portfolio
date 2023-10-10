@@ -1,11 +1,22 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import LinkedinIcon from './icon-linkedin-50.png';
 import GithubIcon from './icon-github-50.png';
 import emailjs from '@emailjs/browser';
+import Modal from '../../components/Modal/Modal';
+
 
 const Contact = () => {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -15,17 +26,11 @@ const Contact = () => {
     emailjs.sendForm('service_gmrizbh', 'template_is98d2n', form.current, 'I-gzM1BKGb-df5OY1')
       .then((result) => {
           console.log(result.text);
+          handleOpenModal();
       }, (error) => {
           console.log(error.text);
       });
-
-      refreshPage();
   };
-
-  const refreshPage = () => {
-    window.location.reload();
-  }
-
 
   return (
     <div>
@@ -68,6 +73,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
     </div>
   );
 };

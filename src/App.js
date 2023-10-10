@@ -45,10 +45,10 @@ function App() {
               <div class="button-line-sidenav"></div>
             </div>
             <div className='optionsContainer' >
-              <h1 className='custom-font' onClick={() => handleScroll(400)}>AboutMe</h1>
-              <h1 className='custom-font' onClick={() => handleScroll(900)}>Projects</h1>
-              <h1 className='custom-font' onClick={() => handleScroll(1400)}>Skills</h1>
-              <h1 className='custom-font' onClick={() => handleScroll(2000)}>Contact</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll(400)}>AboutMe</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll(900)}>Projects</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll(1400)}>Skills</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll(2000)}>Contact</h1>
             </div>
           </div>
         )}
