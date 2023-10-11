@@ -4,7 +4,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <div className="about-main">
+    <div className="about-main" id="about-main">
 
       {/* TODO extract this into a separate Header component */}
       <div className="aboutDiv">
@@ -14,7 +14,7 @@ const About = () => {
       <div className="textAndImg">
         <div className="textDiv">
           <h1 className="h1-text custom-font-readable">
-            I’ve always loved to play computer games, and with that I started to
+            As a Frontend Developer, I’ve always loved to play computer games, and with that I started to
             gain interest in trying to understand how everything worked software
             wise. With these values in mind, I ventured into what was the
             unknown for me, the programming world. There, I discovered the

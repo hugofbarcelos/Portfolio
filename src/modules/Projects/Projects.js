@@ -5,7 +5,7 @@ import Card from '../../components/Card/Card.js';
 
 const Project = () => {
   return (
-    <div>
+    <div id='project-main'>
       <div className="aboutDiv">
         <h1 className="project custom-font">Projects</h1>
       </div>

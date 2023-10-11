@@ -5,7 +5,7 @@ const Skills = () => {
   const skills = ["JavaScript", "Vue.js", "SCSS", "React.js", "HTML", "Java", "Git", "TypeScript", "Umbraco"];
 
   return (
-    <div >
+    <div id='skills-main'>
         <div className='skillsContainer'>
           <h1 className='custom-font skillsText'>Skills</h1>
         </div>

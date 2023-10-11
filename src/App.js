@@ -23,8 +23,16 @@ function App() {
     }
   };
 
-  const handleScroll = (position) => {
-    window.scrollTo({top: position, behavior: "smooth"});
+  const handleScroll = (elementId) => {
+    console.log('elementbyid', elementId);
+    const element = document.getElementById(elementId);
+
+
+      const position = element.offsetTop;
+      console.log('position', position);
+      window.scrollTo({top: position, behavior: "smooth"});
+
+
   }
 
   return (
@@ -45,10 +53,10 @@ function App() {
               <div class="button-line-sidenav"></div>
             </div>
             <div className='optionsContainer' >
-              <h1 className='custom-font-readable' onClick={() => handleScroll(400)}>AboutMe</h1>
-              <h1 className='custom-font-readable' onClick={() => handleScroll(900)}>Projects</h1>
-              <h1 className='custom-font-readable' onClick={() => handleScroll(1400)}>Skills</h1>
-              <h1 className='custom-font-readable' onClick={() => handleScroll(2000)}>Contact</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll('about-main')}>AboutMe</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll('project-main')}>Projects</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll('skills-main')}>Skills</h1>
+              <h1 className='custom-font-readable' onClick={() => handleScroll('contact-main')}>Contact</h1>
             </div>
           </div>
         )}
