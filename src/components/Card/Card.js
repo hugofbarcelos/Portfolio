@@ -4,8 +4,6 @@ import '../Card/Card.css';
 const Card = ({ img, imageClass, text, containerClass, technologies }) => {
   const [tech, setTech] = useState(false);
 
-  console.log(tech);
-
   const handleChange = () => {
     if (tech) {
       setTech(false);

@@ -15,8 +15,6 @@
     justify-content: center;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    
-
 }
 
 .aboutDiv {
@@ -44,6 +42,7 @@
     letter-spacing: 2px;
     color: white;
     line-height: 22px;
+    cursor: default;
 }
 
 .textAndImg {
@@ -75,13 +74,11 @@
     }
 }
 
-
 @media only screen and (max-width: 500px) {
     .photo{
         width: 21rem;
     }
 }
-
 
 @media only screen and (max-width: 385px) {
     .photo{
