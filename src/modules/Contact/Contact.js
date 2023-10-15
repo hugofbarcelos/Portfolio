@@ -9,6 +9,7 @@ import Modal from '../../components/Modal/Modal';
 const Contact = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -20,7 +21,7 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-
+    setLoading(true);
     e.preventDefault();
 
     emailjs.sendForm('service_gmrizbh', 'template_is98d2n', form.current, 'I-gzM1BKGb-df5OY1')
@@ -29,6 +30,8 @@ const Contact = () => {
           handleOpenModal();
       }, (error) => {
           console.log(error.text);
+      }).finally(() => {
+        setLoading(false);
       });
   };
 
@@ -74,6 +77,8 @@ const Contact = () => {
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
+      {loading && <div class="loader"></div>}
+      
     </div>
   );
 };
